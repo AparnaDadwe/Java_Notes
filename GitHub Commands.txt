@@ -1,0 +1,90 @@
+Git and GitHub
+access Token for postman to create repository in github:  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 
+Username-appu88262@gmail.com(AparnaDadwe)
+password-Pranshi@1991
+
+Steps :
+Go on eclipse 
+your project and right click 
+then click on propwerties and click on sorce file then ur projct workspace will come after then 
+right click on .project and the click on git bash here
+after the command prompt will open then
+1) verify that ur existing project is git enabled or not using following command
+   git status - it will check the ur status of existing project
+2)convert project to git enabled project
+     git init
+
+Git has 3 file sysytem
+------------------------
+A)Untracted file
+B)Tracked File(track karne ke liye statig area main ek command hai)
+   3)  git add .(ya ha pain . isliye likha kyonki sare file track karne hai isliye)
+Agar specific file add karni hai to specific file ka na de do (EX:  git add pom.xml)
+---->after sab file track karne ke bad ek bar fir se (git status yeh command run karo) to sare file green ho jayengi to samja lena sari file tracked ho gayi hai
+
+Ab hamare pas git ka local repository hota hai hame yeh file commit krana hota hai to ek command hai(local repositoiry main sara kuch dalna hai)
+----------------------------------------------------------------------------------------------------
+git commit -m "This is my first commit"(-m msg dena padata hai "" meaningful msg dena padta hai)
+
+Ab hame hamara username and password set karna padta hai(yeh process sirf first time karna padta hai)
+-----------------------------------------------------------------------------------------------------
+git config --global user.email "appu88262@gmail.com"
+
+then enter again run one command
+
+git config --global user.name "AparnaDadwe"
+
+git config -m "This is my first comment"  (All file succesfully commit)
+
+Now we want to connect central repository
+-------------------------------------------
+yaha pain hamara central repository ka url lena padta hai(https://github.com//AparnaDadwe//ParamEdutech.git) command hai
+
+git remote add origin https://github.com//AparnaDadwe//ParamEdutech.git
+(Hamara central repository connect ho chuka hai)
+
+Abhi origin pain kohi branch nahi hai hame create karna padega using following command
+---------------------------------------------------------------------------------------
+git push origin master
+
+eske bad ek popup ayega credential puchega (Sign with ur browser karna)
+uske bad page ayaega usmain Authorize git-ecosystem
+iske bad hamara code yeh hamare local repository se central repository pain push ho gaya hai aur master nam ka branch bhi ban gaya hai
+github pe jake ek bar check karna pura code vaha pain aa gaya hai
+(Ham dine main jitane bhi code change karenge to woh push karna hai har bar)
+
+Agar hum central repository main kahi pain class ya file main change karte hain phir commit changes karna central repository la change 
+---------------------------------------------------------------------------------------------------------------------------------------zaly pan to change aplay local repository la disnar tyasathi wegli command run karaychi
+---------------------------------------------------------------------------------------
+
+git pull origin master
+
+Ata aplay local repository la kahi file la change kelay pan to central repository la nhi disnar tar tyasathi wegli command vaprychi
+------------------------------------------------------------------------------------------------------------------------------------
+apn file madhye chnage kelay ahe tyanantr
+
+git status
+
+git add (modified file name) jyachyamadhe apan change kelay tyach purn souce path takych
+
+punha (git status) karych mag apli file green disnar mhnje ti file tracked zali ahe
+
+mag aplya local repository la add karych ahe tar
+git commit -m "This my new change"
+
+modified kelela code central repository la takycha tevhachi command
+--------------------------------------------------------------------
+git push origin
+
+git push origin master
+
+
+
+
+
+
+
+
+
+
+
